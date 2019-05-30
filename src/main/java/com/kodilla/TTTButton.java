@@ -25,8 +25,10 @@ public class TTTButton extends Button {
     public void displayFigure(Figure figure) {
         if (figure instanceof FigureX)
             setText("X");
-        else if (figure instanceof FigureO)
+        if (figure instanceof FigureO)
             setText("O");
+        if (figure.getColour())
+            setStyle("-fx-background-color: #00ff00");
     }
 
 }
