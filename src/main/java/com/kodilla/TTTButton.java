@@ -19,6 +19,7 @@ public class TTTButton extends Button {
 
     private void doClick() {
         game.doClick(row, col);
+        game.checkForWinningConditions();
         game.showBoard();
     }
 
